@@ -1,0 +1,160 @@
+{
+    "declare": "metatab-latest",
+    "title": "San Diego Police Regions and Demographics",
+    "description": "Boundary shapes for San Diego neighborhoods, beats and divisions, with ACS estimates for populations, by race.",
+    "identifier": "9f92e8a5-d775-40e6-9875-cfa2cb13e08d",
+    "name": "sandiego.gov-police_regions-5",
+    "dataset": "police_regions",
+    "origin": "sandiego.gov",
+    "time": null,
+    "space": null,
+    "grain": null,
+    "version": "5",
+    "created": "2017-11-07T16:20:12",
+    "modified": "2020-11-11T06:27:59",
+    "issued": "2020-11-11T06:27:59",
+    "ckanid": "34adab32-cc6f-4121-818e-8027c4e40a9d",
+    "giturl": "https://github.com/metatab-packages/metatab-packages/tree/master/sandiego.gov/sandiego.gov-police_regions",
+    "resources": [
+        {
+            "path": "data/pd_beats.csv",
+            "name": "pd_beats",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "objectid",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "beat",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "div",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "serv",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "geometry",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/pd_divisions.csv",
+            "name": "pd_divisions",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "objectid",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "div_num",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "div_name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "geometry",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/pd_neighborhoods.csv",
+            "name": "pd_neighborhoods",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "objectid",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "div_num",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "div_name",
+                        "type": "string"
+                    },
+                    {
+                        "name": "geometry",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "path": "data/beat_demographics.csv",
+            "name": "beat_demographics",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "beat",
+                        "description": "Beat number",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "total",
+                        "description": "Total population of beat",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "white",
+                        "description": "White population of beat",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "black",
+                        "description": "Black population of beat",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "aian",
+                        "description": "American Indian population of beat",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "asian",
+                        "description": "Asian population of beat",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "nhopi",
+                        "description": "Hawaiian population of beat",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "hisp",
+                        "description": "Hispanic population of beat",
+                        "type": "integer"
+                    }
+                ]
+            }
+        }
+    ]
+}
