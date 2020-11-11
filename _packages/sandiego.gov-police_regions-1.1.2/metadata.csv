@@ -14,8 +14,8 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,2
 Created,2017-11-07T16:20:12
-Modified,2020-11-11T06:31:49
-Issued,2020-11-11T06:31:49
+Modified,2020-11-11T06:37:37
+Issued,2020-11-11T06:37:37
 Ckanid,34adab32-cc6f-4121-818e-8027c4e40a9d
 Giturl,https://github.com/metatab-packages/metatab-packages/tree/master/sandiego.gov/sandiego.gov-police_regions
 ""
@@ -32,17 +32,8 @@ Reference,census://2016/5/CA/140/B03002,race,"Race, by tract, in San Diego count
 ""
 Section,Resources,Name,Description,
 Datafile,data/pd_beats.csv,pd_beats,Police beats,
-Datafile.Source_Projection,epsg:2230
-Datafile.Target_Projection,epsg:4326
-Datafile.Projection,epsg:4326
 Datafile,data/pd_divisions.csv,pd_divisions,Police Divisions,
-Datafile.Source_Projection,epsg:2230
-Datafile.Target_Projection,epsg:4326
-Datafile.Projection,epsg:4326
 Datafile,data/pd_neighborhoods.csv,pd_neighborhoods,Police Neighborhoods,
-Datafile.Source_Projection,epsg:2230
-Datafile.Target_Projection,epsg:4326
-Datafile.Projection,epsg:4326
 Datafile,data/beat_demographics.csv,beat_demographics,"Counts of people in the beat, by race.",
 ""
 Section,Schema,DataType,Description,
