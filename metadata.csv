@@ -3,18 +3,18 @@ Title,San Diego Police Regions and Demographics
 Description,"Boundary shapes for San Diego neighborhoods, beats and divisions, with ACS 2019"
 Description,"estimates for populations, by race."
 Identifier,9f92e8a5-d775-40e6-9875-cfa2cb13e08d
-Name,sandiego.gov-police_regions-2.1.1
+Name,sandiego.gov-police_regions-2.1.2
 Dataset,police_regions
 Origin,sandiego.gov
 Time,
 Space,
 Grain,
-Version,2.1.1
+Version,2.1.2
 Version.Major,2
 Version.Minor,1
-Version.Patch,1
+Version.Patch,2
 Created,2017-11-07T16:20:12
-Modified,2021-02-25T19:03:28
+Modified,2021-02-25T19:07:59
 Issued,2017-11-07T17:28:58
 Ckanid,34adab32-cc6f-4121-818e-8027c4e40a9d
 Giturl,https://github.com/metatab-packages/sandiego.gov-police_regions.git
