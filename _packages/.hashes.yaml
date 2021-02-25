@@ -1,6 +1,6 @@
 last_hashes:
-  beat_demographics: b07fab4061a2a66be48aa0a990d0889e
-  pd_beats: 22b61a8510a1c0d0940b0f7d20e73fe4
-  pd_divisions: cc5537e1439fd59d6ff934f9fa7ada7f
-  pd_neighborhoods: cc5537e1439fd59d6ff934f9fa7ada7f
-last_package: metapack+file:///Users/eric/proj/data-projects/metatab-packages/sandiego/sandiego.gov/sandiego.gov-police_regions/_packages/sandiego.gov-police_regions-1.1.2/metadata.csv
+  beat_demographics: ea74821f67e6dca94dbd35d76fa00b69
+  pd_beats: b0fdd18e8abb1b58b7064acf1f8e1569
+  pd_divisions: 4e6e6dbf43f188bca86ead441cc7fb62
+  pd_neighborhoods: 4e6e6dbf43f188bca86ead441cc7fb62
+last_package: metapack+file:///Users/eric/proj/data-projects/metatab-packages/crime-sandiego-collection/sandiego.gov-police_regions/_packages/sandiego.gov-police_regions-2.1.1/metadata.csv

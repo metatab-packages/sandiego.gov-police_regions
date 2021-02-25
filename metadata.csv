@@ -1,23 +1,23 @@
 Declare,metatab-latest
 Title,San Diego Police Regions and Demographics
-Description,"Boundary shapes for San Diego neighborhoods, beats and divisions, with ACS"
+Description,"Boundary shapes for San Diego neighborhoods, beats and divisions, with ACS 2019"
 Description,"estimates for populations, by race."
 Identifier,9f92e8a5-d775-40e6-9875-cfa2cb13e08d
-Name,sandiego.gov-police_regions-1.1.2
+Name,sandiego.gov-police_regions-2.1.1
 Dataset,police_regions
 Origin,sandiego.gov
 Time,
 Space,
 Grain,
-Version,1.1.2
-Version.Major,1
+Version,2.1.1
+Version.Major,2
 Version.Minor,1
-Version.Patch,2
+Version.Patch,1
 Created,2017-11-07T16:20:12
-Modified,2020-11-11T06:28:53
+Modified,2021-02-25T19:03:28
 Issued,2017-11-07T17:28:58
 Ckanid,34adab32-cc6f-4121-818e-8027c4e40a9d
-Giturl,https://github.com/metatab-packages/metatab-packages/tree/master/sandiego.gov/sandiego.gov-police_regions
+Giturl,https://github.com/metatab-packages/sandiego.gov-police_regions.git
 ""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
@@ -25,38 +25,22 @@ Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowle
 Section,Documentation,Title,Description,
 Documentation,file:README.md,Readme,,
 Homepage,https://data.sandiego.gov/datasets/pd-divisions/,Police Divisions Repository Page,Data repository page that links to original files.,
+Note,"Version 2.1.1 Updates to 2019 Census, better EPSG ( UTM 11N ) for area calc",,,
 ""
 Section,References,Name,Description,
-Reference,metapack+http://library.metatab.org/sandiegodata.org-communities-2018-7.csv#tracts,tracts,"Census tracts from 2016 5 year ACS, for San Diego county",
-Reference,census://2016/5/CA/140/B03002,race,"Race, by tract, in San Diego county",
+Reference,censusgeo://2019/5/CA/tract,tracts,"Census tracts from 2016 5 year ACS, for San Diego county",
+Reference,census://2019/5/CA/tract/B03002,race,"Race, by tract, in San Diego county",
+Reference,shape+http://seshat.datasd.org/sde/pd/pd_beats_datasd.zip,pd_beats_source,Police beats,
+Reference,shape+http://seshat.datasd.org/sde/pd/pd_divisions_datasd.zip,pd_divisions_source,Police Divisions,
+Reference,shape+http://seshat.datasd.org/sde/pd/pd_divisions_datasd.zip,pd_neighborhoods_source,Police Neighborhoods,
 ""
 Section,Resources,Name,Description,
-Datafile,shape+http://seshat.datasd.org/sde/pd/pd_beats_datasd.zip,pd_beats,Police beats,
-Datafile,shape+http://seshat.datasd.org/sde/pd/pd_divisions_datasd.zip,pd_divisions,Police Divisions,
-Datafile,shape+http://seshat.datasd.org/sde/pd/pd_divisions_datasd.zip,pd_neighborhoods,Police Neighborhoods,
+Datafile,notebooks/beats.ipynb#pd_beats,pd_beats,Police beats,
+Datafile,notebooks/beats.ipynb#pd_divisions,pd_divisions,Police Divisions,
+Datafile,notebooks/beats.ipynb#pd_neighborhoods,pd_neighborhoods,Police Neighborhoods,
 Datafile,notebooks/BeatPopulations.ipynb#beat_demographics,beat_demographics,"Counts of people in the beat, by race.",
 ""
-Section,Schema,DataType,Description,
-Table,pd_beats,,,
-Table.Column,id,integer,,
-Table.Column,objectid,integer,,
-Table.Column,beat,integer,,
-Table.Column,div,integer,,
-Table.Column,serv,integer,,
-Table.Column,name,text,,
-Table.Column,geometry,text,,
-Table,pd_divisions,,,
-Table.Column,id,integer,,
-Table.Column,objectid,integer,,
-Table.Column,div_num,integer,,
-Table.Column,div_name,text,,
-Table.Column,geometry,text,,
-Table,pd_neighborhoods,,,
-Table.Column,id,integer,,
-Table.Column,objectid,integer,,
-Table.Column,div_num,integer,,
-Table.Column,div_name,text,,
-Table.Column,geometry,text,,
+Section,Schema,DataType,Description,Has_Codes
 Table,beat_demographics,,,
 Table.Column,beat,integer,Beat number,
 Table.Column,total,integer,Total population of beat,
@@ -66,3 +50,20 @@ Table.Column,aian,integer,American Indian population of beat,
 Table.Column,asian,integer,Asian population of beat,
 Table.Column,nhopi,integer,Hawaiian population of beat,
 Table.Column,hisp,integer,Hispanic population of beat,
+Table,pd_beats,,,
+Table.Column,objectid,integer,,
+Table.Column,beat,integer,,
+Table.Column,div,integer,,
+Table.Column,serv,integer,,
+Table.Column,name,string,,
+Table.Column,geometry,string,,
+Table,pd_divisions,,,
+Table.Column,objectid,integer,,
+Table.Column,div_num,integer,,
+Table.Column,div_name,string,,
+Table.Column,geometry,string,,
+Table,pd_neighborhoods,,,
+Table.Column,objectid,integer,,
+Table.Column,div_num,integer,,
+Table.Column,div_name,string,,
+Table.Column,geometry,string,,
